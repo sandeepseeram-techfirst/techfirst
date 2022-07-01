@@ -1,0 +1,2 @@
+The syntax of rust is similar to the C++ language. 
+Rust guarantees memory safety without using the garbage collector. 
