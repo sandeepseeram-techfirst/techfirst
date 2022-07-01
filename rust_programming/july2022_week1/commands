@@ -1,0 +1,17 @@
+Download Rust through "rustup" which is a command line tool for managing all the Rust versions and its associated tools.
+
+Link: https://www.rust-lang.org/install.html 
+
+
+$ rustc --version   
+rustc 1.44.1 (c7087fe00 2020-06-17)
+$ 
+
+Updating & Uninstalling
+$ rustup update  
+info: no updatable toolchains installed
+info: checking for self-updates
+info: downloading self-update
+
+Uninstall 
+$ rustup self uninstall  
