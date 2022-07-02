@@ -1,0 +1,18 @@
+# Compile the Code 
+    rustc app.rs 
+
+# Run the binary
+    ./app
+
+
+$ ./app
+Hello World!
+$ 
+
+
+if_else program output 
+
+$ rustc app.rs
+$ ./app
+a is smaller than b
+$ 
