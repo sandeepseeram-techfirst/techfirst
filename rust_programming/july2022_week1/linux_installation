@@ -1,0 +1,82 @@
+$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+info: downloading installer
+
+Welcome to Rust!
+
+This will download and install the official compiler for the Rust
+programming language, and its package manager, Cargo.
+
+Rustup metadata and toolchains will be installed into the Rustup
+home directory, located at:
+
+  /root/.rustup
+
+This can be modified with the RUSTUP_HOME environment variable.
+
+The Cargo home directory is located at:
+
+  /root/.cargo
+
+This can be modified with the CARGO_HOME environment variable.
+
+The cargo, rustc, rustup and other commands will be added to
+Cargo's bin directory, located at:
+
+  /root/.cargo/bin
+
+This path will then be added to your PATH environment variable by
+modifying the profile files located at:
+
+  /root/.profile
+  /root/.bashrc
+  /root/.zshenv
+
+You can uninstall at any time with rustup self uninstall and
+these changes will be reverted.
+
+Current installation options:
+
+
+   default host triple: x86_64-unknown-linux-gnu
+     default toolchain: stable (default)
+               profile: default
+  modify PATH variable: yes
+
+1) Proceed with installation (default)
+2) Customize installation
+3) Cancel installation
+>1
+
+info: profile set to 'default'
+info: default host triple is x86_64-unknown-linux-gnu
+info: syncing channel updates for 'stable-x86_64-unknown-linux-gnu'
+info: latest update on 2023-01-10, rust version 1.66.1 (90743e729 2023-01-10)
+info: downloading component 'cargo'
+info: downloading component 'clippy'
+info: downloading component 'rust-docs'
+info: downloading component 'rust-std'
+info: downloading component 'rustc'
+info: downloading component 'rustfmt'
+info: installing component 'cargo'
+info: installing component 'clippy'
+info: installing component 'rust-docs'
+ 19.1 MiB /  19.1 MiB (100 %)   6.1 MiB/s in  2s ETA:  0s
+info: installing component 'rust-std'
+ 30.0 MiB /  30.0 MiB (100 %)  10.2 MiB/s in  2s ETA:  0s
+info: installing component 'rustc'
+ 67.4 MiB /  67.4 MiB (100 %)  11.0 MiB/s in  6s ETA:  0s
+info: installing component 'rustfmt'
+info: default toolchain set to 'stable-x86_64-unknown-linux-gnu'
+
+  stable-x86_64-unknown-linux-gnu installed - rustc 1.66.1 (90743e729 2023-01-10)
+
+
+Rust is installed now. Great!
+
+To get started you may need to restart your current shell.
+This would reload your PATH environment variable to include
+Cargo's bin directory ($HOME/.cargo/bin).
+
+To configure your current shell, run:
+source "$HOME/.cargo/env"
+$ 
