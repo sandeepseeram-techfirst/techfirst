@@ -1,0 +1,38 @@
+Istio is a service mesh—a modernized service networking layer that provides a transparent and language-independent way to flexibly and easily automate application network functions. It is a popular solution for managing the different microservices that make up a cloud-native application.
+===================================================================================
+
+Checking K8s cluster status  
+
+developer:src > check-status.sh k8s
+[Wed Jan 25 06:43:28 UTC 2023] Checking status for k8s...
+
+[Wed Jan 25 06:43:28 UTC 2023] K8s cluster is ready to go.
+developer:src > 
+====================================================================================
+developer:src > check-status.sh istio
+[Wed Jan 25 06:46:26 UTC 2023] Checking status for istio...
+
+[Wed Jan 25 06:46:27 UTC 2023] Istio is ready to go.
+developer:src >  
+
+=====================================================================================
+Add a namespace label to instruct Istio to inject Envoy sidecar proxies automatically:
+
+kubectl label namespace default istio-injection=enabled 
+
+developer:src > kubectl label namespace default istio-injection=enabled
+namespace/default labeled
+developer:src > 
+
+=======================================================================================
+
+Verify that the namespace been labeled successfully: 
+kubectl get namespace default --show-labels 
+
+developer:src > kubectl get namespace default --show-labels
+NAME      STATUS   AGE   LABELS
+default   Active   10m   istio-injection=enabled,kubernetes.io/metadata.name=default
+developer:src > 
+
+=========================================================================================
+

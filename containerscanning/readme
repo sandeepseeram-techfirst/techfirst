@@ -1,0 +1,61 @@
+open source container scanners include:
+
+1. Trivy
+2. Clair
+3. Grype
+
+
+* KubeClarity 
+Add Helm repository.
+
+helm repo add kubeclarity https://openclarity.github.io/kubeclarity
+
+
+developer:src > helm repo add kubeclarity https://openclarity.github.io/kubeclarity
+"kubeclarity" has been added to your repositories
+developer:src >  
+
+Save KubeClarity default chart values.
+
+helm show values kubeclarity/kubeclarity > values.yaml
+
+
+You can now deploy KubeClarity with Helm:
+
+helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity
+
+
+Note: Helm configures the monitored namespaces only for Istio integration. 
+The default namespace is where the Envoy Wasm filters will be deployed to allow traffic tracing.
+
+
+developer:src > kubectl get pods -n kubeclarity
+NAME                                                   READY   STATUS    RESTARTS   AGE
+kubeclarity-kubeclarity-8579bb894f-d8wdp               1/1     Running   0          2m52s
+kubeclarity-kubeclarity-grype-server-c8fc5847f-4m8br   1/1     Running   0          2m52s
+kubeclarity-kubeclarity-postgresql-0                   1/1     Running   0          2m52s
+kubeclarity-kubeclarity-sbom-db-84bd57966-6zzjj        1/1     Running   0          2m52s
+developer:src > 
+
+
+developer:src > kubectl -n kubeclarity wait --for=condition=ready pod -l app=kubeclarity-kubeclarity --timeout=120s
+pod/kubeclarity-kubeclarity-8579bb894f-d8wdp condition met
+developer:src >  
+
+
+
+Issue the following command to forward port 8080 to the KubeClarity UI:
+
+kubectl port-forward -n kubeclarity svc/kubeclarity-kubeclarity 80:8080 > ~/.kubeclarity.log 2>&1 &
+
+developer:src > kubectl port-forward -n kubeclarity svc/kubeclarity-kubeclarity 80:8080 > ~/.kubeclarity.log 2>&1 &
+[1] 10957
+
+Reload the internal proxy to allow access to the KubeClarity UI via DEVENV_APP_8080_URL:
+
+DEVENV_APP_8080_URL_PROXY=localhost:80 reload-devenv-proxy.sh 
+
+
+Display the DEVENV_APP_8080_URL URL to access the KubeClarity UI:
+
+echo "${DEVENV_APP_8080_URL}"
