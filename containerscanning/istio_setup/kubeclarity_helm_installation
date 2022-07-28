@@ -1,0 +1,17 @@
+developer:src > helm install --values values.yaml --create-namespace kubeclarity kubeclarity/kubeclarity -n kubeclarity
+NAME: kubeclarity
+LAST DEPLOYED: Wed Jan 25 06:55:57 2023
+NAMESPACE: kubeclarity
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+Thank you for installing KUBECLARITY.
+
+Your release is named kubeclarity.
+
+Here is how to access the KubeClarity UI:
+
+    $ kubectl port-forward --namespace kubeclarity svc/kubeclarity-kubeclarity 9999:8080
+    $ Open KubeClarity UI in the browser: http://localhost:9999/
+developer:src > 
