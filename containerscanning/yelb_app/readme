@@ -1,0 +1,21 @@
+Yelb has containers for Database (Postgres), Caching service (Redis), Web server (NGINX), and App server (Ruby).
+
+deploy an app for testing.
+
+developer:src > kubectl create -f https://gist.githubusercontent.com/oborys/444d965f17be5a40ab3752a67d07da7f/raw/737c0dc4d4ec6f5057a95ca77936ee829e15f8e7/gistfile1.txt
+service/redis-server created
+service/yelb-db created
+service/yelb-appserver created
+service/yelb-ui created
+deployment.apps/yelb-ui created
+deployment.apps/redis-server created
+deployment.apps/yelb-db created
+deployment.apps/yelb-appserver created
+developer:src > 
+
+Create an Istio Ingress Gateway:
+
+developer:src > kubectl create -f https://gist.githubusercontent.com/oborys/e39025f07e8b8122b654999e13a2df93/raw/c53183ab74cb6ec242be05ab804754083fd5a8be/gistfile1.txt
+gateway.networking.istio.io/yelb-gateway created
+virtualservice.networking.istio.io/yelb created
+
