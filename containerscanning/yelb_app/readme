@@ -19,3 +19,15 @@ developer:src > kubectl create -f https://gist.githubusercontent.com/oborys/e390
 gateway.networking.istio.io/yelb-gateway created
 virtualservice.networking.istio.io/yelb created
 
+Check pods 
+
+developer:src > kubectl get pods
+NAME                             READY   STATUS    RESTARTS   AGE
+redis-server-74556bbcb7-lwfl7    2/2     Running   0          5m9s
+yelb-appserver-d584bb889-t45xj   2/2     Running   0          5m8s
+yelb-db-694586cd78-t8674         2/2     Running   0          5m8s
+yelb-ui-767cdbdb67-p9pw6         2/2     Running   0          5m9s
+developer:src > 
+
+developer:src > kubectl wait --for=condition=ready pod -l app=yelb-ui --timeout=240s
+pod/yelb-ui-767cdbdb67-p9pw6 condition met
