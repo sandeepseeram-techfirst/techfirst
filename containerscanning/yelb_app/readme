@@ -31,3 +31,30 @@ developer:src >
 
 developer:src > kubectl wait --for=condition=ready pod -l app=yelb-ui --timeout=240s
 pod/yelb-ui-767cdbdb67-p9pw6 condition met
+
+
+Set the INGRESS_HOST and INGRESS_PORT variables for accessing the gateway (GATEWAY_URL):
+
+export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}')
+export SECURE_INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="https")].nodePort}')
+export INGRESS_HOST=$(kubectl get po -l istio=ingressgateway -n istio-system -o jsonpath='{.items[0].status.hostIP}')
+export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
+echo "${GATEWAY_URL}"
+
+
+developer:src > export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}')
+developer:src > export SECURE_INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="https")].nodePort}')
+developer:src > export INGRESS_HOST=$(kubectl get po -l istio=ingressgateway -n istio-system -o jsonpath='{.items[0].status.hostIP}')
+developer:src > export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
+developer:src > echo "${GATEWAY_URL}"
+172.18.0.2:32023
+developer:src > 
+
+
+developer:src > DEVENV_APP_8081_URL_PROXY=$GATEWAY_URL reload-devenv-proxy.sh
+developer:src > echo ${DEVENV_APP_8081_URL}
+https://app-8081-6979961426065792738.devenv.eu-north-1.devnetcloud.com
+developer:src > 
+
+ERROR - 
+upstream connect error or disconnect/reset before headers. reset reason: connection failure
