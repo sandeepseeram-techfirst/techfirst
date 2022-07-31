@@ -1,0 +1,4 @@
+Application programming interfaces or API’s are was in which computers can communicate to one another programmatically. 
+The de-facto standard for modern API’s is Representational State Transfer or REST, leveraging the HTTP protocol. 
+REST API’s work function utilizing a client-server model in which an HTTP endpoint is published to provide some functionality. 
+HTTP clients make appropriate method calls to the endpoint to trigger the desired action.
