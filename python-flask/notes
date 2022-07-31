@@ -9,3 +9,11 @@ Requirements:
 * Use Python to send an API call.
 * Build and run a Flask HTTP server.
 * Build a HTTP route to make a new HTTP API endpoint.
+
+Software: 
+
+Python 3.7+
+Python requests (installed with pip install requests)
+Python Flask (installed with pip install flask)
+Git
+Postman.
