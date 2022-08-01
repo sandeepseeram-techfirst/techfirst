@@ -17,3 +17,13 @@ Python requests (installed with pip install requests)
 Python Flask (installed with pip install flask)
 Git
 Postman.
+
+HTTP METHODS: 
+
+An HTTP GET method is used by a client to retrieve data from a server. The most common way we typically interact with this is through a web browser when viewing web pages. Additional methods perform various operations, and the following are some of the most common:
+
+GET: Retrieve data
+POST: Create, update, or overwrite data
+PUT: Update data
+PATCH: Update or append data
+DELETE: Remove data
