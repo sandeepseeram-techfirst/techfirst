@@ -27,3 +27,11 @@ POST: Create, update, or overwrite data
 PUT: Update data
 PATCH: Update or append data
 DELETE: Remove data
+
+
+Headers
+A header is a dictionary object that contains attributes for the request. Common attributes include:
+
+Accept: The data type that the API client is expecting.
+Content-Type: The data type contained in the request body.
+Authorization: The credentials used to authenticate the call.
