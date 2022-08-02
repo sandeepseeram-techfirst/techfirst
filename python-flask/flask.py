@@ -24,3 +24,7 @@ if request.method == 'POST':
     header = request.headers
     cookies = request.cookies
     return 'Hello from within your new API'
+
+@app.route('/')
+def index():
+    return requests.get('https://jsonplaceholder.typicode.com/users')
