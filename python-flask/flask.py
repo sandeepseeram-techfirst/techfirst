@@ -16,3 +16,11 @@ def new_api():
 def index():
     return 'Response from Root URL' 
 
+@app.route('/newAPI', methods=['POST'])
+def new_api():
+if request.method == 'POST':
+    args = request.args.get('car')
+    body = request.data
+    header = request.headers
+    cookies = request.cookies
+    return 'Hello from within your new API'
