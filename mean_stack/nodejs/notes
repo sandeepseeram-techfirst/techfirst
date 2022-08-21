@@ -1,0 +1,8 @@
+# Example: Build & Launch
+The command to build the image is 
+
+docker build -t my-nodejs-app .
+
+The command to launch the built image is 
+
+docker run -d --name my-running-app -p 3000:3000 my-nodejs-app
