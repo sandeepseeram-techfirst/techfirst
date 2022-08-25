@@ -29,3 +29,11 @@ added 288 packages from 373 contributors and audited 288 packages in 27.297s
 
 found 6 vulnerabilities (3 low, 3 moderate)
   run `npm audit fix` to fix them, or `npm audit` for details
+
+
+
+$ mkdir -p ~/.node-red
+$ cd .node-red
+$ pwd
+/root/.node-red
+$ 
