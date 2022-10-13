@@ -1,0 +1,14 @@
+curl --location --request POST 'https://data.mongodb-api.com/app/data-kwisg/endpoint/data/v1/action/findOne' \
+--header 'Content-Type: application/json' \
+--header 'Access-Control-Request-Headers: *' \
+--header 'api-key: 34nnLvQEz0zbuKFw5NVptpOmRlytpYVEoW88P65agChulU4quvjz9st8Rl3shkr4' \
+--data-raw '{
+    "dataSource":"Cluster0",
+    "database":"sample_mflix",
+    "collection":"movies",
+    "projection": {"title": 1}
+}'     
+
+
+{"document":{"_id":"573a1390f29313caabcd4135","title":"Blacksmith Scene"}}
+$
