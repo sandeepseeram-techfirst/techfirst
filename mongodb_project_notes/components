@@ -1,0 +1,8 @@
+The core components in MongoDB are:
+
+mongo: The MongoDB shell itself, an interactive JavaScript shell interface to MongoDB that you can use to connect and run commands
+mongod: The primary daemon process, the core process for the MongoDB system
+mongos: The process that routes queries and writes operations in a sharded cluster
+
+
+Sharded cluster: This clustering feature from MongoDB allows distributing data across multiple machines (scale-out), for very large data sets and high-throughput operations.
