@@ -1,0 +1,12 @@
+$ systemctl status mongod
+● mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; disabled; vendor preset: enabled)
+     Active: active (running) since Tue 2023-01-24 07:52:09 UTC; 5min ago
+       Docs: https://docs.mongodb.org/manual
+   Main PID: 1495 (mongod)
+     Memory: 213.7M
+     CGroup: /system.slice/mongod.service
+             └─1495 /usr/bin/mongod --config /etc/mongod.conf
+
+Jan 24 07:52:09 host01 systemd[1]: Started MongoDB Database Server.
+$ 
