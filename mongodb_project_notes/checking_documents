@@ -1,0 +1,10 @@
+Checking Documents
+Those are the most common helpers used to visualize the structures in MongoDB.
+
+In general, each helper has an equivalent JavaScript command that performs the same operation, as seen below:
+
+Helper	                           Equivalent
+use playground	         db.getSisterDB("playground")
+show dbs	             db.getMongo().getDBs()
+show collections	     db.getCollectionNames()
+
