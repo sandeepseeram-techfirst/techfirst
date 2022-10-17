@@ -1,0 +1,17 @@
+mongo mongodb://dba_adm:*******@mongodb0.example.com:27017/?authSource=admin
+
+where:
+
+dba_adm is the user
+****** is the password
+mongodb0.example.com is the host
+27017 is the port
+authSource is the database with the user's credential
+The default port for mongod is 27017.
+
+
+
+
+
+
+mongo --host=localhost --port=27017 --username=db_admin --password='*********' --authenticationDatabase=playground
