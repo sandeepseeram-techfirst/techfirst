@@ -1,0 +1,23 @@
+# String
+Any string of UTF-8 characters can be represented using the string type:
+
+db.reviews.find({"_id" : "10009999"},{"address.street" : 1}).pretty()
+
+# Date
+MongoDB stores dates as 64-bit integers representing milliseconds since the Unix epoch (January 1, 1970):
+
+db.reviews.find({"_id" : "10009999"},{"calendar_last_scraped" : 1}).pretty()
+
+ISODate() shows the date in UTC.
+
+# Array
+Sets or lists of values can be represented as arrays:
+
+db.reviews.find({"_id" : "10009999"},{"amenities" : 1}).pretty()
+
+# Embedded Document
+Documents can contain entire child documents embedded as values:
+
+db.reviews.find({"_id" : "10009999"},{"images" : 1}).pretty()
+
+The cursor .pretty() can be used to display results in a format that is easy to read.
