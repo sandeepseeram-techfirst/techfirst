@@ -1,0 +1,23 @@
+Showing Users
+To print a list of users for the current database, you can execute the following command:
+
+# show users
+
+
+> show users
+{
+        "_id" : "playground.db_admin",
+        "userId" : UUID("4f60f40c-a92a-404d-95e6-08b32b7bc773"),
+        "user" : "db_admin",
+        "db" : "playground",
+        "roles" : [
+                {
+                        "role" : "userAdmin",
+                        "db" : "playground"
+                }
+        ],
+        "mechanisms" : [
+                "SCRAM-SHA-1",
+                "SCRAM-SHA-256"
+        ]
+}
