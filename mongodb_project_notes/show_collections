@@ -1,0 +1,7 @@
+After switching databases, you can print a list of all collections for the current database:
+
+# show collections
+
+> show collections
+reviews
+> 
