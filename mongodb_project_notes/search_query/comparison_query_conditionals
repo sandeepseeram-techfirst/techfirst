@@ -1,0 +1,7 @@
+Comparison Query Operators
+If you want to specify values that are less or greater, you can use the following query conditionals in MongoDB:
+
+$lt: Less than
+$lte: Less than or equal to
+$gt: Greater than
+$gte: Greater than or equal to
