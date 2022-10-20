@@ -1,0 +1,24 @@
+> db.movies.find( {"IMDB Rating": 8.0},{"Title": 1, "Director":1, "_id": 0 })
+
+{ "Title" : "Before Sunrise", "Director" : "Richard Linklater" }
+{ "Title" : "Brazil", "Director" : "Terry Gilliam" }
+{ "Title" : "Casino Royale", "Director" : "John Huston" }
+{ "Title" : "A Christmas Story", "Director" : null }
+{ "Title" : "Cat on a Hot Tin Roof", "Director" : "Richard Brooks" }
+{ "Title" : "Central do Brasil", "Director" : "Walter Salles" }
+{ "Title" : "Bacheha-Ye aseman", "Director" : null }
+{ "Title" : "Dances with Wolves", "Director" : "Kevin Costner" }
+{ "Title" : "Doctor Zhivago", "Director" : "David Lean" }
+{ "Title" : "Edward Scissorhands", "Director" : "Tim Burton" }
+{ "Title" : "Per un pugno di dollari", "Director" : "Sergio Leone" }
+{ "Title" : "Glory", "Director" : "Edward Zwick" }
+{ "Title" : "Hoop Dreams", "Director" : null }
+{ "Title" : "JFK", "Director" : "Oliver Stone" }
+{ "Title" : "The Last Waltz", "Director" : null }
+{ "Title" : "Midnight Cowboy", "Director" : "John Schlesinger" }
+{ "Title" : "Rain Man", "Director" : "Barry Levinson" }
+{ "Title" : "Spartacus", "Director" : "Stanley Kubrick" }
+{ "Title" : "Sling Blade", "Director" : null }
+{ "Title" : "Simon", "Director" : null }
+Type "it" for more
+> 
