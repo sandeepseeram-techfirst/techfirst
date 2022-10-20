@@ -1,0 +1,25 @@
+> db.movies.find({"IMDB Rating": 8.0},{"Title": 1, "Director": 1 })
+
+
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa7f7c"), "Title" : "Before Sunrise", "Director" : "Richard Linklater" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa7fb1"), "Title" : "Brazil", "Director" : "Terry Gilliam" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa7fc3"), "Title" : "Casino Royale", "Director" : "John Huston" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa7fce"), "Title" : "A Christmas Story", "Director" : null }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa7fd0"), "Title" : "Cat on a Hot Tin Roof", "Director" : "Richard Brooks" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa7fdd"), "Title" : "Central do Brasil", "Director" : "Walter Salles" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa7fe9"), "Title" : "Bacheha-Ye aseman", "Director" : null }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa8023"), "Title" : "Dances with Wolves", "Director" : "Kevin Costner" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa803a"), "Title" : "Doctor Zhivago", "Director" : "David Lean" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa803f"), "Title" : "Edward Scissorhands", "Director" : "Tim Burton" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa8064"), "Title" : "Per un pugno di dollari", "Director" : "Sergio Leone" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa809d"), "Title" : "Glory", "Director" : "Edward Zwick" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa80d5"), "Title" : "Hoop Dreams", "Director" : null }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa8107"), "Title" : "JFK", "Director" : "Oliver Stone" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa8121"), "Title" : "The Last Waltz", "Director" : null }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa8179"), "Title" : "Midnight Cowboy", "Director" : "John Schlesinger" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa8239"), "Title" : "Rain Man", "Director" : "Barry Levinson" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa8258"), "Title" : "Spartacus", "Director" : "Stanley Kubrick" }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa8275"), "Title" : "Sling Blade", "Director" : null }
+{ "_id" : ObjectId("63cf969d0b01fdd8ddfa8284"), "Title" : "Simon", "Director" : null }
+Type "it" for more
+> 
