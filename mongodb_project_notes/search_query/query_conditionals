@@ -1,0 +1,6 @@
+In MongoDB, there are a range of query operators you can use to compare values, including the following:
+
+$and: Joins query clauses with a logical AND, returning all documents that match the conditions of both clauses
+$not: Inverts the effect of a query expression, returning documents that do not match the query expression
+$nor: Joins query clauses with a logical NOR, returning all documents that fail to match both clauses
+$or: Joins query clauses with a logical OR, returning all documents that match the conditions of either clause
