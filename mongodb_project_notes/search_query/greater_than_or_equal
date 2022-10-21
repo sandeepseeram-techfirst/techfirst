@@ -1,0 +1,24 @@
+> db.movies.find({"IMDB Votes": {"$gte": 10000}},{ "Title": 1, "_id": 0}).pretty()
+
+{ "Title" : "Following" }
+{ "Title" : "To Kill A Mockingbird" }
+{ "Title" : "12 Angry Men" }
+{ "Title" : "Twelve Monkeys" }
+{ "Title" : 1941 }
+{ "Title" : "2001: A Space Odyssey" }
+{ "Title" : "3 Men and a Baby" }
+{ "Title" : "Four Rooms" }
+{ "Title" : "Four Weddings and a Funeral" }
+{ "Title" : "Nine 1/2 Weeks" }
+{ "Title" : "The Abyss" }
+{ "Title" : "Ace Ventura: Pet Detective" }
+{ "Title" : "Ace Ventura: When Nature Calls" }
+{ "Title" : "Alice in Wonderland" }
+{ "Title" : "The Alamo" }
+{ "Title" : "American Graffiti" }
+{ "Title" : "The American President" }
+{ "Title" : "Annie Hall" }
+{ "Title" : "The Apartment" }
+{ "Title" : "Apocalypse Now" }
+Type "it" for more
+> 
