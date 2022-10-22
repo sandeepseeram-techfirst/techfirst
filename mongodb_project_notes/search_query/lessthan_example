@@ -1,0 +1,24 @@
+> db.movies.find({"IMDB Rating": {"$lt": 4}},{ "Title": 1,"_id": 0})
+
+{ "Title" : "Slam" }
+{ "Title" : "Foolish" }
+{ "Title" : "The Ten Commandments" }
+{ "Title" : "3 Ninjas Kick Back" }
+{ "Title" : "Alive" }
+{ "Title" : "American Ninja 2: The Confrontation" }
+{ "Title" : "Beastmaster 2: Through the Portal of Time" }
+{ "Title" : "Beauty and the Beast" }
+{ "Title" : "My Big Fat Independent Movie" }
+{ "Title" : "The Calling" }
+{ "Title" : "Can't Stop the Music" }
+{ "Title" : "Def-Con 4" }
+{ "Title" : "Exorcist II: The Heretic" }
+{ "Title" : "Friday the 13th Part VIII: Jason Takes Manhattan" }
+{ "Title" : "The Fog" }
+{ "Title" : "Graduation Day" }
+{ "Title" : "The Helix...  Loaded" }
+{ "Title" : "Highlander III: The Sorcerer" }
+{ "Title" : "Halloween 3: Season of the Witch" }
+{ "Title" : "Hum to Mohabbt Karega" }
+Type "it" for more
+> 
