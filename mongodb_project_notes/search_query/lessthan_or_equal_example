@@ -1,0 +1,24 @@
+> db.movies.find({"US Gross": {"$lte": 1000000}},{ "Title": 1,"_id": 0})
+
+{ "Title" : "The Land Girls" }
+{ "Title" : "First Love, Last Rites" }
+{ "Title" : "I Married a Strange Person" }
+{ "Title" : "Let's Talk About Sex" }
+{ "Title" : "Mississippi Mermaid" }
+{ "Title" : "Following" }
+{ "Title" : "12 Angry Men" }
+{ "Title" : 1776 }
+{ "Title" : "Chacun sa nuit" }
+{ "Title" : "24 7: Twenty Four Seven" }
+{ "Title" : "Twin Falls Idaho" }
+{ "Title" : "Three Kingdoms: Resurrection of the Dragon" }
+{ "Title" : "Forty Shades of Blue" }
+{ "Title" : "51 Birch Street" }
+{ "Title" : "AstÈrix aux Jeux Olympiques" }
+{ "Title" : "Among Giants" }
+{ "Title" : "Alice in Wonderland" }
+{ "Title" : "The Princess and the Cobbler" }
+{ "Title" : "Amen" }
+{ "Title" : "Anatomie" }
+Type "it" for more
+> 
