@@ -1,0 +1,23 @@
+> db.movies.find({"IMDB Rating": {"$in":[5.0,7.0,9.0]}},{ "Title": 1, "IMDB Rating": 1, "_id": 0})
+
+{ "Title" : "Duel in the Sun", "IMDB Rating" : 7 }
+{ "Title" : "Tom Jones", "IMDB Rating" : 7 }
+{ "Title" : "Wilson", "IMDB Rating" : 7 }
+{ "Title" : 1776, "IMDB Rating" : 7 }
+{ "Title" : "The Four Seasons", "IMDB Rating" : 7 }
+{ "Title" : "Baby's Day Out", "IMDB Rating" : 5 }
+{ "Title" : "Battle for the Planet of the Apes", "IMDB Rating" : 5 }
+{ "Title" : "Beverly Hills Cop III", "IMDB Rating" : 5 }
+{ "Title" : "Bienvenue chez les Ch'tis", "IMDB Rating" : 7 }
+{ "Title" : "The Boys from Brazil", "IMDB Rating" : 7 }
+{ "Title" : "The Business of Fancy Dancing", "IMDB Rating" : 7 }
+{ "Title" : "C.H.U.D.", "IMDB Rating" : 5 }
+{ "Title" : "Desperado", "IMDB Rating" : 7 }
+{ "Title" : "Die Hard 2", "IMDB Rating" : 7 }
+{ "Title" : "Dil Jo Bhi Kahey...", "IMDB Rating" : 5 }
+{ "Title" : "The Doors", "IMDB Rating" : 7 }
+{ "Title" : "Dracula: Pages from a Virgin's Diary", "IMDB Rating" : 7 }
+{ "Title" : "Friday", "IMDB Rating" : 7 }
+{ "Title" : "The Godfather: Part II", "IMDB Rating" : 9 }
+{ "Title" : "Goodbye Bafana", "IMDB Rating" : 7 }
+Type "it" for more
