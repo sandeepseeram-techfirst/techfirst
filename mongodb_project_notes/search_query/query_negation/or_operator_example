@@ -1,0 +1,8 @@
+> db.movies.find({"$or":[{"US Gross": 10000000},{"Worldwide Gross": 500000000}]},{"Title": 1,"Worldwide Gross": 1, "US Gross": 1, "_id": 0})
+
+{ "Title" : "55 Days at Peking", "US Gross" : 10000000, "Worldwide Gross" : 10000000 }
+{ "Title" : "The Birth of a Nation", "US Gross" : 10000000, "Worldwide Gross" : 11000000 }
+{ "Title" : "Hud", "US Gross" : 10000000, "Worldwide Gross" : 10000000 }
+{ "Title" : "King Kong (1933)", "US Gross" : 10000000, "Worldwide Gross" : 10000000 }
+{ "Title" : "Maniac", "US Gross" : 10000000, "Worldwide Gross" : 10000000 }
+> 
