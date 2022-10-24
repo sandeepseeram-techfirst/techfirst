@@ -1,0 +1,8 @@
+> db.movies.find({"Director": /Ben /}, {"Title": 1, "Director": 1,"_id": 0}).pretty()
+
+{ "Title" : "The Cable Guy", "Director" : "Ben Stiller" }
+{ "Title" : "Gone, Baby, Gone", "Director" : "Ben Affleck" }
+{ "Title" : "The Town", "Director" : "Ben Affleck" }
+{ "Title" : "Tropic Thunder", "Director" : "Ben Stiller" }
+{ "Title" : "Zoolander", "Director" : "Ben Stiller" }
+> 
