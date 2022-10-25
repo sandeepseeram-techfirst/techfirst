@@ -1,0 +1,60 @@
+Embedded Documents
+An embedded or nested document is a document that is contained in another document, in the key field. In other words, it's a document inside a document.
+
+> db.airlines.find({
+...    "$and":[
+...       {
+...          "Statistics.Flights.Cancelled":{
+...             "$gt":1000
+...          }
+...       },
+...       {
+...          "Time.Year":2007
+...       },
+...       {
+...          "Time.Month Name":"December"
+...       }
+...    ]
+... }).pretty()
+{
+        "_id" : ObjectId("63cf9b8718cb77277636b900"),
+        "Airport" : {
+                "Code" : "ORD",
+                "Name" : "Chicago, IL: Chicago O'Hare International"
+        },
+        "Time" : {
+                "Label" : "2007/12",
+                "Month" : 12,
+                "Month Name" : "December",
+                "Year" : 2007
+        },
+        "Statistics" : {
+                "# of Delays" : {
+                        "Carrier" : 1821,
+                        "Late Aircraft" : 4247,
+                        "National Aviation System" : 6193,
+                        "Security" : 18,
+                        "Weather" : 373
+                },
+                "Carriers" : {
+                        "Names" : "American Airlines Inc.,Alaska Airlines Inc.,JetBlue Airways,Continental Air Lines Inc.,Delta Air Lines Inc.,American Eagle Airlines Inc.,Northwest Airlines Inc.,Comair Inc.,SkyWest Airlines Inc.,United Air Lines Inc.,US Airways Inc.,ExpressJet Airlines Inc.,Mesa Airlines Inc.",
+                        "Total" : 13
+                },
+                "Flights" : {
+                        "Cancelled" : 3317,
+                        "Delayed" : 12652,
+                        "Diverted" : 78,
+                        "On Time" : 14206,
+                        "Total" : 30253
+                },
+                "Minutes Delayed" : {
+                        "Carrier" : 134573,
+                        "Late Aircraft" : 345456,
+                        "National Aviation System" : 464970,
+                        "Security" : 566,
+                        "Total" : 982876,
+                        "Weather" : 37311
+                }
+        }
+}
+> 
