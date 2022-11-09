@@ -1,0 +1,10 @@
+The MongoDB shell method to create an index is .createIndex(). 
+
+> db.movies.createIndex({"Production Budget": 1})
+{
+        "createdCollectionAutomatically" : false,
+        "numIndexesBefore" : 1,
+        "numIndexesAfter" : 2,
+        "ok" : 1
+}
+> 
