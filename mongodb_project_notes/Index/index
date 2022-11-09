@@ -1,0 +1,5 @@
+What Is an Index?
+A database index is similar to a book’s index. Instead of looking through all the content, the database takes a shortcut and just looks at an ordered list referencing the content.
+
+Why? 
+Indexes support efficient execution of queries in MongoDB. When querying without indexes, MongoDB must perform a collection scan, that is, scan every document in a collection, to select those documents that match the query statement.
