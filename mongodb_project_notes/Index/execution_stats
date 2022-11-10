@@ -1,0 +1,88 @@
+.explain("executionStats")
+
+db.movies.find({"Production Budget": {$gt:100000000 }},{"Title": 1,"Production Budget" : 1, "_id": 0}).explain("executionStats")
+
+
+
+> db.movies.find({"Production Budget": {$gt:100000000 }},{"Title": 1,"Production Budget" : 1, "_id": 0}).explain("executionStats")
+{
+        "queryPlanner" : {
+                "plannerVersion" : 1,
+                "namespace" : "playground.movies",
+                "indexFilterSet" : false,
+                "parsedQuery" : {
+                        "Production Budget" : {
+                                "$gt" : 100000000
+                        }
+                },
+                "winningPlan" : {
+                        "stage" : "PROJECTION_SIMPLE",
+                        "transformBy" : {
+                                "Title" : 1,
+                                "Production Budget" : 1,
+                                "_id" : 0
+                        },
+                        "inputStage" : {
+                                "stage" : "COLLSCAN",
+                                "filter" : {
+                                        "Production Budget" : {
+                                                "$gt" : 100000000
+                                        }
+                                },
+                                "direction" : "forward"
+                        }
+                },
+                "rejectedPlans" : [ ]
+        },
+        "executionStats" : {
+                "executionSuccess" : true,
+                "nReturned" : 145,
+                "executionTimeMillis" : 4,
+                "totalKeysExamined" : 0,
+                "totalDocsExamined" : 3201,
+                "executionStages" : {
+                        "stage" : "PROJECTION_SIMPLE",
+                        "nReturned" : 145,
+                        "executionTimeMillisEstimate" : 0,
+                        "works" : 3203,
+                        "advanced" : 145,
+                        "needTime" : 3057,
+                        "needYield" : 0,
+                        "saveState" : 3,
+                        "restoreState" : 3,
+                        "isEOF" : 1,
+                        "transformBy" : {
+                                "Title" : 1,
+                                "Production Budget" : 1,
+                                "_id" : 0
+                        },
+                        "inputStage" : {
+                                "stage" : "COLLSCAN",
+                                "filter" : {
+                                        "Production Budget" : {
+                                                "$gt" : 100000000
+                                        }
+                                },
+                                "nReturned" : 145,
+                                "executionTimeMillisEstimate" : 0,
+                                "works" : 3203,
+                                "advanced" : 145,
+                                "needTime" : 3057,
+                                "needYield" : 0,
+                                "saveState" : 3,
+                                "restoreState" : 3,
+                                "isEOF" : 1,
+                                "direction" : "forward",
+                                "docsExamined" : 3201
+                        }
+                }
+        },
+        "serverInfo" : {
+                "host" : "host01",
+                "port" : 27017,
+                "version" : "4.4.10",
+                "gitVersion" : "58971da1ef93435a9f62bf4708a81713def6e88c"
+        },
+        "ok" : 1
+}
+> 
