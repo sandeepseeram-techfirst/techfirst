@@ -1,0 +1,7 @@
+1. If the new indexation is too large to fit in memory, MongoDB will perform more switches to flush old data from memory into the disk and also push from disk into memory information that needs to be read. This leads to performance degradation.
+
+2. When active, each index consumes disk space and memory. This usage can be significant and should be tracked for capacity planning, especially for concerns over working set size.
+
+3. If your application is write heavy, indexes might affect performance. Because a write operation modifies an indexed field, MongoDB updates all indexes that have the modified field as a key.
+
+4. Before indexing, make sure the field exhibits high cardinality. This refers to the uniqueness of values for a field. For example, Boolean fields have low cardinality because they will be 1 or 0. If you try to index this field, you will end up querying half the collection one way or another, and the index will not help as expected.
