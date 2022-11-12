@@ -1,0 +1,6 @@
+The .explain() plan results contain several fields that support us in making decisions.  
+
+nReturned: Number of documents that match the query condition
+executionTimeMillis: Total time in milliseconds required for query-plan selection and query execution
+totalKeysExamined: Number of index entries scanned
+totalDocsExamined: Number of documents examined during query execution
