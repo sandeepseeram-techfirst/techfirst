@@ -1,0 +1,16 @@
+What Kind of Indexes Exist on MongoDB?
+The list of index types is long, and each type is suited for a specific scenario. 
+But all of them have the same purpose: to help you speed up your query.
+
+Available index types include the following:
+
+Single field
+Compound
+Multikey
+Text
+Wildcard
+2dsphere
+2d
+geoHaystack
+Hashed
+Single-field and compound indexes are the most commonly used; they are the standard form to index one or multiple fields.
