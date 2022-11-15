@@ -1,0 +1,143 @@
+> db.movies.find({"MPAA Rating" : "R", "Worldwide Gross": {$gt: 1000000}}, {"Title": 1, "_id": 0}).explain("executionStats")
+{
+        "queryPlanner" : {
+                "plannerVersion" : 1,
+                "namespace" : "playground.movies",
+                "indexFilterSet" : false,
+                "parsedQuery" : {
+                        "$and" : [
+                                {
+                                        "MPAA Rating" : {
+                                                "$eq" : "R"
+                                        }
+                                },
+                                {
+                                        "Worldwide Gross" : {
+                                                "$gt" : 1000000
+                                        }
+                                }
+                        ]
+                },
+                "winningPlan" : {
+                        "stage" : "PROJECTION_SIMPLE",
+                        "transformBy" : {
+                                "Title" : 1,
+                                "_id" : 0
+                        },
+                        "inputStage" : {
+                                "stage" : "FETCH",
+                                "inputStage" : {
+                                        "stage" : "IXSCAN",
+                                        "keyPattern" : {
+                                                "MPAA Rating" : 1,
+                                                "Worldwide Gross" : 1
+                                        },
+                                        "indexName" : "MPAA Rating_1_Worldwide Gross_1",
+                                        "isMultiKey" : false,
+                                        "multiKeyPaths" : {
+                                                "MPAA Rating" : [ ],
+                                                "Worldwide Gross" : [ ]
+                                        },
+                                        "isUnique" : false,
+                                        "isSparse" : false,
+                                        "isPartial" : false,
+                                        "indexVersion" : 2,
+                                        "direction" : "forward",
+                                        "indexBounds" : {
+                                                "MPAA Rating" : [
+                                                        "[\"R\", \"R\"]"
+                                                ],
+                                                "Worldwide Gross" : [
+                                                        "(1000000.0, inf.0]"
+                                                ]
+                                        }
+                                }
+                        }
+                },
+                "rejectedPlans" : [ ]
+        },
+        "executionStats" : {
+                "executionSuccess" : true,
+                "nReturned" : 1037,
+                "executionTimeMillis" : 6,
+                "totalKeysExamined" : 1037,
+                "totalDocsExamined" : 1037,
+                "executionStages" : {
+                        "stage" : "PROJECTION_SIMPLE",
+                        "nReturned" : 1037,
+                        "executionTimeMillisEstimate" : 0,
+                        "works" : 1038,
+                        "advanced" : 1037,
+                        "needTime" : 0,
+                        "needYield" : 0,
+                        "saveState" : 1,
+                        "restoreState" : 1,
+                        "isEOF" : 1,
+                        "transformBy" : {
+                                "Title" : 1,
+                                "_id" : 0
+                        },
+                        "inputStage" : {
+                                "stage" : "FETCH",
+                                "nReturned" : 1037,
+                                "executionTimeMillisEstimate" : 0,
+                                "works" : 1038,
+                                "advanced" : 1037,
+                                "needTime" : 0,
+                                "needYield" : 0,
+                                "saveState" : 1,
+                                "restoreState" : 1,
+                                "isEOF" : 1,
+                                "docsExamined" : 1037,
+                                "alreadyHasObj" : 0,
+                                "inputStage" : {
+                                        "stage" : "IXSCAN",
+                                        "nReturned" : 1037,
+                                        "executionTimeMillisEstimate" : 0,
+                                        "works" : 1038,
+                                        "advanced" : 1037,
+                                        "needTime" : 0,
+                                        "needYield" : 0,
+                                        "saveState" : 1,
+                                        "restoreState" : 1,
+                                        "isEOF" : 1,
+                                        "keyPattern" : {
+                                                "MPAA Rating" : 1,
+                                                "Worldwide Gross" : 1
+                                        },
+                                        "indexName" : "MPAA Rating_1_Worldwide Gross_1",
+                                        "isMultiKey" : false,
+                                        "multiKeyPaths" : {
+                                                "MPAA Rating" : [ ],
+                                                "Worldwide Gross" : [ ]
+                                        },
+                                        "isUnique" : false,
+                                        "isSparse" : false,
+                                        "isPartial" : false,
+                                        "indexVersion" : 2,
+                                        "direction" : "forward",
+                                        "indexBounds" : {
+                                                "MPAA Rating" : [
+                                                        "[\"R\", \"R\"]"
+                                                ],
+                                                "Worldwide Gross" : [
+                                                        "(1000000.0, inf.0]"
+                                                ]
+                                        },
+                                        "keysExamined" : 1037,
+                                        "seeks" : 1,
+                                        "dupsTested" : 0,
+                                        "dupsDropped" : 0
+                                }
+                        }
+                }
+        },
+        "serverInfo" : {
+                "host" : "host01",
+                "port" : 27017,
+                "version" : "4.4.10",
+                "gitVersion" : "58971da1ef93435a9f62bf4708a81713def6e88c"
+        },
+        "ok" : 1
+}
+> 
