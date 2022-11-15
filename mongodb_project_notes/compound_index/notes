@@ -1,0 +1,10 @@
+syntax to be used to create a single-field index:
+
+db.collection.createIndex({"Field to be indexed": 1})
+
+For a compound index, we have the following:
+
+db.collection.createIndex({"Field to be indexed": 1, "Some other field": 1}) 
+
+
+MongoDB imposes a limit of 32 fields for any compound index.
