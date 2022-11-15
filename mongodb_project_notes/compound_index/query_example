@@ -1,0 +1,108 @@
+> db.movies.find({"MPAA Rating" : "R", "Worldwide Gross": {$gt: 1000000}}, {"Title": 1, "_id": 0}).explain("executionStats")
+
+{
+        "queryPlanner" : {
+                "plannerVersion" : 1,
+                "namespace" : "playground.movies",
+                "indexFilterSet" : false,
+                "parsedQuery" : {
+                        "$and" : [
+                                {
+                                        "MPAA Rating" : {
+                                                "$eq" : "R"
+                                        }
+                                },
+                                {
+                                        "Worldwide Gross" : {
+                                                "$gt" : 1000000
+                                        }
+                                }
+                        ]
+                },
+                "winningPlan" : {
+                        "stage" : "PROJECTION_SIMPLE",
+                        "transformBy" : {
+                                "Title" : 1,
+                                "_id" : 0
+                        },
+                        "inputStage" : {
+                                "stage" : "COLLSCAN",
+                                "filter" : {
+                                        "$and" : [
+                                                {
+                                                        "MPAA Rating" : {
+                                                                "$eq" : "R"
+                                                        }
+                                                },
+                                                {
+                                                        "Worldwide Gross" : {
+                                                                "$gt" : 1000000
+                                                        }
+                                                }
+                                        ]
+                                },
+                                "direction" : "forward"
+                        }
+                },
+                "rejectedPlans" : [ ]
+        },
+        "executionStats" : {
+                "executionSuccess" : true,
+                "nReturned" : 1037,
+                "executionTimeMillis" : 8,
+                "totalKeysExamined" : 0,
+                "totalDocsExamined" : 3201,
+                "executionStages" : {
+                        "stage" : "PROJECTION_SIMPLE",
+                        "nReturned" : 1037,
+                        "executionTimeMillisEstimate" : 0,
+                        "works" : 3203,
+                        "advanced" : 1037,
+                        "needTime" : 2165,
+                        "needYield" : 0,
+                        "saveState" : 3,
+                        "restoreState" : 3,
+                        "isEOF" : 1,
+                        "transformBy" : {
+                                "Title" : 1,
+                                "_id" : 0
+                        },
+                        "inputStage" : {
+                                "stage" : "COLLSCAN",
+                                "filter" : {
+                                        "$and" : [
+                                                {
+                                                        "MPAA Rating" : {
+                                                                "$eq" : "R"
+                                                        }
+                                                },
+                                                {
+                                                        "Worldwide Gross" : {
+                                                                "$gt" : 1000000
+                                                        }
+                                                }
+                                        ]
+                                },
+                                "nReturned" : 1037,
+                                "executionTimeMillisEstimate" : 0,
+                                "works" : 3203,
+                                "advanced" : 1037,
+                                "needTime" : 2165,
+                                "needYield" : 0,
+                                "saveState" : 3,
+                                "restoreState" : 3,
+                                "isEOF" : 1,
+                                "direction" : "forward",
+                                "docsExamined" : 3201
+                        }
+                }
+        },
+        "serverInfo" : {
+                "host" : "host01",
+                "port" : 27017,
+                "version" : "4.4.10",
+                "gitVersion" : "58971da1ef93435a9f62bf4708a81713def6e88c"
+        },
+        "ok" : 1
+}
+>
