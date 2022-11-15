@@ -1,0 +1,8 @@
+> db.movies.createIndex({"MPAA Rating": 1, "Worldwide Gross": 1})
+{
+        "createdCollectionAutomatically" : false,
+        "numIndexesBefore" : 1,
+        "numIndexesAfter" : 2,
+        "ok" : 1
+}
+> 
