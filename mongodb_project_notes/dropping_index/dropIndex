@@ -1,0 +1,3 @@
+> db.movies.dropIndex("Title_1")
+{ "nIndexesWas" : 3, "ok" : 1 }
+> 
