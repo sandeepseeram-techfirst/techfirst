@@ -1,0 +1,14 @@
+.dropIndex() is the method responsible for removing an undesired index:
+
+db.collection.dropIndex("Index name")
+
+
+> db.movies.dropIndex("Worldwide Gross_1")
+{ "nIndexesWas" : 5, "ok" : 1 }
+
+> db.movies.dropIndex("IMDB Votes_1_Worldwide Gross_1")
+{ "nIndexesWas" : 4, "ok" : 1 }
+
+> db.movies.dropIndex("Title_1_Worldwide Gross_1")
+{ "nIndexesWas" : 3, "ok" : 1 }
+> 
