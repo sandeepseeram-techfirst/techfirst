@@ -5,3 +5,10 @@ It is the most used build tool among Java developers and provides the following 
 * Uniform build system
 * Project information
 * Encourages better development practices
+
+
+All Maven projects start with a simple pom.xml and grow in complexity from there.
+
+
+Maven POM
+The pom.xml Project Object Model (POM), is the core of a project's configuration in Maven. You can define metadata about your project, dependencies, plug-ins, and control things like build process and package management.
