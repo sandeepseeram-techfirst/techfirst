@@ -12,3 +12,19 @@ All Maven projects start with a simple pom.xml and grow in complexity from there
 
 Maven POM
 The pom.xml Project Object Model (POM), is the core of a project's configuration in Maven. You can define metadata about your project, dependencies, plug-ins, and control things like build process and package management.
+
+
+mvn validate 
+
+$ mvn validate
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.oreilly.books:books >-----------------------
+[INFO] Building books 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.089 s
+[INFO] Finished at: 2023-01-25T13:51:06Z
+[INFO] ------------------------------------------------------------------------
