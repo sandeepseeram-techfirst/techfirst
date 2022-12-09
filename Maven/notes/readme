@@ -28,3 +28,13 @@ $ mvn validate
 [INFO] Total time:  0.089 s
 [INFO] Finished at: 2023-01-25T13:51:06Z
 [INFO] ------------------------------------------------------------------------
+
+
+
+By default, Maven expects your source code to be in /src/main/java + groupId.  
+
+In your pom.xml, you defined your groupId as:
+
+<groupId>com.oreilly.books</groupId>
+This means that your source code should be stored in /src/main/java/com/oreilly/books
+
