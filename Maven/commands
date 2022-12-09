@@ -4,3 +4,9 @@ Maven home: /usr/share/maven
 Java version: 16, vendor: Oracle Corporation, runtime: /usr/local/openjdk-16
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "5.4.0-137-generic", arch: "amd64", family: "unix"
+
+
+mvn validate 
+
+
+mvn archetype:generate -DgroupId=com.oreilly.books -DartifactId=books -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
