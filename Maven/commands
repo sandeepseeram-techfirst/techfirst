@@ -8,5 +8,8 @@ OS name: "linux", version: "5.4.0-137-generic", arch: "amd64", family: "unix"
 
 mvn validate 
 
-
 mvn archetype:generate -DgroupId=com.oreilly.books -DartifactId=books -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+if you want to run the compile goal from the compiler plugin, you would run the following command:
+
+mvn clean
