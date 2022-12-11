@@ -8,3 +8,10 @@ war: build a WAR from the current project
 install: install the built artifact into the local repository
 surefire: run the JUnit unit tests in an isolated classloader
 javadoc: generate Javadoc for the project
+
+
+
+the compiler plugin is made up of two goals:
+
+compiler:compile is bound to the compile phase and is used to compile the main source files
+compiler:testCompile is bound to the test-compile phase and is used to compile the test source files
