@@ -20,3 +20,11 @@ Right now you only have a single file, App.java, in your application, but this w
 If you want to compile all of the source code in your application, you can run the following goal:
 
 mvn compile
+
+
+This will create a directory called target/ that contains all of your compiled code in the classes directory. 
+When you first started writing Java code, you learned how to compile a Java file using javac and then run it using java. 
+While this works, it doesn't scale very well. 
+In a future step you will learn how to run your applications after they have been compiled.
+
+
