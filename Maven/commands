@@ -13,3 +13,10 @@ mvn archetype:generate -DgroupId=com.oreilly.books -DartifactId=books -Darchetyp
 if you want to run the compile goal from the compiler plugin, you would run the following command:
 
 mvn clean
+
+
+Compile Java Source Code
+Right now you only have a single file, App.java, in your application, but this will work for one or one hundred files. 
+If you want to compile all of the source code in your application, you can run the following goal:
+
+mvn compile
