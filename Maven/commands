@@ -28,3 +28,18 @@ While this works, it doesn't scale very well.
 In a future step you will learn how to run your applications after they have been compiled.
 
 
+$ mvn clean
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.oreilly.books:books >-----------------------
+[INFO] Building books 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ books ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.218 s
+[INFO] Finished at: 2023-01-25T14:07:22Z
+[INFO] ------------------------------------------------------------------------
+$ 
