@@ -38,3 +38,15 @@ In your pom.xml, you defined your groupId as:
 <groupId>com.oreilly.books</groupId>
 This means that your source code should be stored in /src/main/java/com/oreilly/books
 
+
+common default life cycle phases executed:
+
+validate
+compile
+test
+package
+integration-test
+verify
+install
+deploy
+
