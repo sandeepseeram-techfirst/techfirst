@@ -1,0 +1,5 @@
+executable jar 
+plugin is added to the pom.xml
+
+$ java -jar target/books-1.0-SNAPSHOT.jar
+Hello World!
