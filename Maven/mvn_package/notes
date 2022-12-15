@@ -1,0 +1,5 @@
+when we run the package phase, Maven will automatically run validate, compile, test, and then package. 
+If you run package, Maven will generate a JAR for you by default:
+
+mvn package 
+
