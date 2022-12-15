@@ -3,3 +3,8 @@ If you run package, Maven will generate a JAR for you by default:
 
 mvn package 
 
+
+
+$ java -cp target/books-1.0-SNAPSHOT.jar com.oreilly.books.App
+Hello World!
+$ 
