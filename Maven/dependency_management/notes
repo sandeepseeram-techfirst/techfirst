@@ -1,2 +1,4 @@
 What Is Dependency Management?
 A dependency is any code that your project depends on.
+
+One of Maven's core features is dependency management. 
