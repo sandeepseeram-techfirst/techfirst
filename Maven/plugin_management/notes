@@ -1,0 +1,9 @@
+Maven Plugins
+
+What a plugin is
+How to declare plugins
+What the Maven Dependency plugin is, and how to use it
+What the Maven Compiler and Clean plugins are, and how to use them
+What the Maven Install plugin is, and how to use it
+What the Maven JAR plugin is, and how to use it
+What the Maven Surefire plugin is, and how to use it
