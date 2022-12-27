@@ -14,3 +14,9 @@ There are two types of plugins—build and reporting:
 
 Build plugins will be executed during the build and they should be configured in the element from the POM
 Reporting plugins will be executed during the site generation and they should be configured in the <reporting/> element from the POM
+
+<build>
+  <plugins>
+
+  </plugins>
+</build>
