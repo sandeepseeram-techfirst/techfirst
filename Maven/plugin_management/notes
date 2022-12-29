@@ -35,3 +35,6 @@ Reporting plugins will be executed during the site generation and they should be
     </plugin>
   </plugins>
 </build>
+
+
+mvn dependency:tree
