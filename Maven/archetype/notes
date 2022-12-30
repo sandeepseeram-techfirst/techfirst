@@ -1,0 +1,13 @@
+Maven Archetype
+
+What a Maven Archetype is
+How to use the Maven Archetype generate goal
+How to use the maven-archetype-quickstart archetype
+How to look at the Maven POM generated from the quickstart archetype
+How to look at the App & Test generated from the quickstart archetype
+
+
+An archetype is a template that you can use to generate a new project. 
+There are number of archetypes provided by Maven and the Java community, and you can even create your own.
+
+Maven Archetype Plugin
