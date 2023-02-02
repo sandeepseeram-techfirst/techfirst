@@ -17,3 +17,8 @@ bin/cassandra -R
 
 # Cassandra Version 
 grep -m 1 -A 2 "Cassandra version" logs/system.log
+
+
+$ bin/stop-server
+please read the stop-server script before use
+$ 
