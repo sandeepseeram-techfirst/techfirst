@@ -1,0 +1,4 @@
+wget http://archive.apache.org/dist/cassandra/4.0-alpha4/apache-cassandra-4.0-alpha4-bin.tar.gz 
+
+tar xvzf apache-cassandra-4.0-alpha4-bin.tar.gz 
+
