@@ -2,3 +2,9 @@ wget http://archive.apache.org/dist/cassandra/4.0-alpha4/apache-cassandra-4.0-al
 
 tar xvzf apache-cassandra-4.0-alpha4-bin.tar.gz 
 
+$ ls
+apache-cassandra-4.0-alpha4  apache-cassandra-4.0-alpha4-bin.tar.gz
+$ cd apache-cassandra-4.0-alpha4/
+$ ls
+bin  CASSANDRA-14092.txt  CHANGES.txt  conf  doc  javadoc  lib  LICENSE.txt  NEWS.txt  NOTICE.txt  pylib  tools
+$ 
