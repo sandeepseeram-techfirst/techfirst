@@ -8,3 +8,12 @@ $ cd apache-cassandra-4.0-alpha4/
 $ ls
 bin  CASSANDRA-14092.txt  CHANGES.txt  conf  doc  javadoc  lib  LICENSE.txt  NEWS.txt  NOTICE.txt  pylib  tools
 $ 
+
+
+Run the following command to start your server:
+
+bin/cassandra -R
+
+
+# Cassandra Version 
+grep -m 1 -A 2 "Cassandra version" logs/system.log
