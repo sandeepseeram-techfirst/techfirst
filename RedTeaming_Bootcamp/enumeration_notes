@@ -1,0 +1,6 @@
+#### RED TEAMING 
+
+Red Teaming is a security assessment technique that simulates a malicious actor’s attack on an organization’s systems and processes. It is used to evaluate an organization’s security posture and identify potential risks and vulnerabilities in a simulated real-world attack. Red Teaming involves the use of ethical hacking techniques, social engineering, and other techniques to bypass security measures and gain access to sensitive information or resources. The goal of Red Teaming is to provide organizations with an accurate view of their security posture and help them better prepare for and respond to potential threats.
+
+
+Red Teaming involves the use of various enumeration techniques to gain access to sensitive information or resources. Enumeration is the process of attempting to gain information about a system by attempting to identify users, services, data, and other resources. Enumeration techniques include port scanning, banner grabbing, network mapping, and vulnerability scanning. By identifying information about the system, an attacker can gain access to sensitive information or resources. Enumeration techniques allow malicious actors to gain an understanding of an organization’s security posture and identify potential vulnerabilities that can be exploited. 
