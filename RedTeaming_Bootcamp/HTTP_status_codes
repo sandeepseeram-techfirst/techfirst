@@ -1,0 +1,5 @@
+Messages in the 100 range are informational.
+Messages in the 200 range are related to successful transactions.
+Messages in the 300 range are related to HTTP redirections.
+Messages in the 400 range are related to client errors.
+Messages in the 500 range are related to server errors.
