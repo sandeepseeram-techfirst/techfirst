@@ -1,0 +1,8 @@
+#### WhatWeb
+
+Whatweb is a tool that can be used to disclose the web server information such as the IP address, version, webpage title, and running operating system.
+
+#### Installation 
+
+sudo apt update && apt install whatweb -y 
+
