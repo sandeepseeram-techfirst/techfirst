@@ -52,3 +52,90 @@ HOP RTT     ADDRESS
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 18.55 seconds
 $ 
+
+
+#### 10.6.6.10 
+
+$ nmap -A 10.6.6.10
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-02-15 08:32 UTC
+Nmap scan report for 10.6.6.10
+Host is up (0.000056s latency).
+Not shown: 994 closed ports
+PORT    STATE SERVICE     VERSION
+21/tcp  open  ftp         vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| -rw-r--r--    6 0        0              16 Aug 13  2021 file1.txt
+| -rw-r--r--    6 0        0              16 Aug 13  2021 file2.txt
+| -rw-r--r--    6 0        0              29 Aug 13  2021 file3.txt
+|_-rw-r--r--    6 0        0              26 Aug 13  2021 supersecretfile.txt
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 10.6.6.1
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp  open  ssh         OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 7f:9d:b7:59:47:74:0e:8e:90:83:24:2a:33:6c:06:30 (RSA)
+|   256 52:a2:29:69:72:54:dc:47:ab:9f:0f:ce:b9:79:e1:c1 (ECDSA)
+|_  256 cd:4b:02:54:ea:60:df:a7:2d:a2:05:7f:e1:df:af:9d (ED25519)
+53/tcp  open  domain      ISC BIND 9.11.5-P4-5.1+deb10u5 (Debian Linux)
+| dns-nsid: 
+|_  bind.version: 9.11.5-P4-5.1+deb10u5-Debian
+80/tcp  open  http        nginx 1.14.2
+|_http-server-header: nginx/1.14.2
+|_http-title: Home
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn Samba smbd 4.9.5-Debian (workgroup: WORKGROUP)
+MAC Address: 02:42:0A:06:06:0A (Unknown)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=2/15%OT=21%CT=1%CU=38607%PV=Y%DS=1%DC=D%G=Y%M=02420A%T
+OS:M=63EC98BD%P=x86_64-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=10B%TI=Z%CI=Z%II=I
+OS:%TS=A)OPS(O1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O
+OS:5=M5B4ST11NW7%O6=M5B4ST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6
+OS:=FE88)ECN(R=Y%DF=Y%T=40%W=FAF0%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O
+OS:%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=
+OS:0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%
+OS:S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(
+OS:R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=
+OS:N%T=40%CD=S)
+
+Network Distance: 1 hop
+Service Info: Host: GRAVEMIND; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.9.5-Debian)
+|   Computer name: gravemind
+|   NetBIOS computer name: GRAVEMIND\x00
+|   Domain name: \x00
+|   FQDN: gravemind
+|_  System time: 2023-02-15T08:32:53+00:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2023-02-15T08:32:54
+|_  start_date: N/A
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.06 ms 10.6.6.10
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 31.68 seconds
+$ 
+
