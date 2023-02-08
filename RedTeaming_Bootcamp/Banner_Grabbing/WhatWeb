@@ -6,3 +6,21 @@ Whatweb is a tool that can be used to disclose the web server information such a
 
 sudo apt update && apt install whatweb -y 
 
+whatweb -h 
+
+
+###### Agression Levels 
+
+AGGRESSION:
+The aggression level controls the trade-off between speed/stealth and
+reliability.
+  --aggression, -a=LEVEL        Set the aggression level. Default: 1.
+  1. Stealthy                   Makes one HTTP request per target and also
+                                follows redirects.
+  3. Aggressive                 If a level 1 plugin is matched, additional
+                                requests will be made.
+  4. Heavy                      Makes a lot of HTTP requests per target. URLs
+                                from all plugins are attempted.
+
+
+                                
