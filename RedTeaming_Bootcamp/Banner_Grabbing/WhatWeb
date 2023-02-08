@@ -23,4 +23,10 @@ reliability.
                                 from all plugins are attempted.
 
 
-                                
+$ whatweb --aggression 3 10.6.6.8
+/usr/lib/ruby/vendor_ruby/target.rb:188: warning: URI.escape is obsolete
+/usr/lib/ruby/vendor_ruby/target.rb:188: warning: URI.escape is obsolete
+/usr/lib/ruby/vendor_ruby/target.rb:188: warning: URI.escape is obsolete
+/usr/lib/ruby/vendor_ruby/target.rb:188: warning: URI.escape is obsolete
+http://10.6.6.8 [200 OK] Apache[2.4.10], Country[RESERVED][ZZ], HTTPServer[Debian Linux][Apache/2.4.10 (Debian)], IP[10.6.6.8], Script, Title[UNSC Marine Secure Portal]
+$                                
