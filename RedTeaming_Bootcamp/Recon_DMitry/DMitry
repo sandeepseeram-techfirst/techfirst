@@ -28,3 +28,33 @@ Usage: dmitry [-winsepfb] [-t 0-9] [-o %host.txt] host
 
 
 ##### basic enumeration and banner grabbing 
+
+
+$ dmitry -b 10.6.6.10
+Deepmagic Information Gathering Tool
+"There be some deep magic going on"
+
+Error: No '-p' flag passed with TTL, assuming -p
+ERROR: Unable to locate Host Name for 10.6.6.10
+Continuing with limited modules
+HostIP:10.6.6.10
+HostName:
+
+Gathered TCP Port information for 10.6.6.10
+---------------------------------
+
+ Port           State
+
+21/tcp          open
+>> 220 (vsFTPd 3.0.3)
+
+22/tcp          open
+>> SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
+
+53/tcp          open
+
+Portscan Finished: Scanned 150 ports, 146 ports were in state closed
+
+
+All scans completed, exiting
+$ 
