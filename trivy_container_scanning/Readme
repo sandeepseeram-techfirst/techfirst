@@ -6,3 +6,7 @@ It can also scan three different artifacts:
 1. Docker Container Images
 2. Filesystem and Rootfs
 3. Git Repositories
+
+Trivy can be run in standalone mode or in a client/server configuration.
+
+The Trivy scanner is designed to be used in continuous integration (CI) environments. For example, before you push a container to a registry or deploy your application, you can scan your local container image and other artifacts for vulnerabilities and misconfigurations.
