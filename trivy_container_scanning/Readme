@@ -1,0 +1,8 @@
+#### Introducing the Trivy Scanner 
+
+Trivy is an Aqua Security open source project. Trivy can be used to find software vulnerabilities and security misconfigurations.
+It can also scan three different artifacts:
+
+1. Docker Container Images
+2. Filesystem and Rootfs
+3. Git Repositories
