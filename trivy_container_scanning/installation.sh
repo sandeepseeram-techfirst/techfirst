@@ -8,3 +8,5 @@ echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main |
 
 apt update && apt install trivy -y 
 
+$ trivy -v
+Version: 0.37.3
